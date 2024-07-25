@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row mt-5 ms-5 col-6">
+        <label id="title_label">Add Book</label>
+    </div>
+    <div class="row mt-5 ms-5 col-6">
+        <form>
+            <div class="mb-3">
+              <label for="text-bookName" class="form-label">Book Name</label>
+              <input [(ngModel)]="book.bookName" type="text" class="form-control" id="text-bookName" name="text-bookName" >
+            </div>
+            <div class="mb-3">
+              <label for="text-isbn" class="form-label">ISBN</label>
+              <input [(ngModel)]="book.isbn" type="text" class="form-control" id="text-isbn" name="text-isbn">
+            </div>
+            <div class="mb-3">
+                <label for="text-price" class="form-label">Price (Rs.)</label>
+                <input [(ngModel)]="book.price" type="text" class="form-control" id="text-price" name="text-price">
+            </div>
+            <button (click)="addBook()" type="submit" class="btn col-12" id="form-btn">Add</button>
+          </form>
+    </div>    
+</div>

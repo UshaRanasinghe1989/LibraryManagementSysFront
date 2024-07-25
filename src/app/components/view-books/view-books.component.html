@@ -1,0 +1,24 @@
+<div class="container">
+    <table class="table table-striped table-hover mt-5">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Book Name</th>
+            <th scope="col">ISBN</th>
+            <th scope="col">Price (Rs.)</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let book of bookList; index as i">
+            <th>{{i+1}}</th>
+            <td>{{book.bookName}}</td>
+            <td>{{book.isbn}}</td>
+            <td>{{book.price}}</td>
+            <td><button class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button></td>
+            <td></td>
+          </tr>          
+        </tbody>
+      </table>
+</div>

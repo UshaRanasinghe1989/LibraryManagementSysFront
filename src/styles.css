@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+#title_label{
+    font-size: xx-large;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 1rem;
+    color: rgb(181, 128, 31);
+    background-color: #3b3932;
+    width: 50rem;
+    height: 5rem;
+}
+#form-btn{
+    font-size: larger;
+    font-weight: bold;
+    color: #3b3932;
+    background-color: rgb(181, 128, 31);
+}
